@@ -64,7 +64,6 @@ while (true) {
 // Contagem de votos nulos
 const votosNulos = votos.branco + votos.Candidato_X + votos.Candidato_Y + votos.Candidato_Z;
 
-// Resultado dos votos e vencedor
 let resultadoVotos = "Resultado dos votos:\n";
 resultadoVotos += "Candidato X: " + votos.Candidato_X + "\n";
 resultadoVotos += "Candidato Y: " + votos.Candidato_Y + "\n";
@@ -75,7 +74,6 @@ resultadoVotos += "Votos nulos: " + votosNulos + "\n";
 // Cálculo do total de votos válidos
 const totalVotosValidos = votosNulos === 0 ? 1 : votosNulos;
 
-// Encontrar o vencedor
 let vencedor = 'Nenhum';
 let maiorVotos = 0;
 
